@@ -10,7 +10,10 @@ class Buku
 
 //method : fungsi yg ada di dalam class
 public function halo(){
-	return "hello world";
+	return "hello world <br>";
+}
+public function getBuku(){
+	return "Buku $this->nama, Harga $this->harga";
 }
 
 }
@@ -33,4 +36,5 @@ echo "Buku : $buku2->nama, $buku2->pengarang";
 echo "<br>";
 //manggil method
 echo $buku2->halo();
+echo $buku2->getBuku();
  ?>
