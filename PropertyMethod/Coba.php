@@ -13,6 +13,7 @@ class Buku
 // var_dump($buku1);
 
 $buku2 = new Buku();
+//set value properti langsung
 $buku2->nama = "CSS";
 $buku2->harga = 20000;
 $buku2->pengarang = "Senong";
