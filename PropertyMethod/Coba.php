@@ -8,6 +8,16 @@ class Buku
 		$penerbit = "Unpas";
 }
 //object instance dari class
-$buku1 = new Buku();
-var_dump($buku1);
+// $buku1 = new Buku();
+// $buku1->nama = "JAVA";
+// var_dump($buku1);
+
+$buku2 = new Buku();
+$buku2->nama = "CSS";
+$buku2->harga = 20000;
+$buku2->pengarang = "Senong";
+$buku2->penerbit = "Media";
+var_dump($buku2);
+
+echo "Buku : $buku2->nama, $buku2->pengarang";
  ?>
