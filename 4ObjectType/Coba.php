@@ -32,6 +32,17 @@ public function getBuku(){
 }
 
 }
+
+//membuat class baru
+class Coba2
+{
+	public function cetakInfoBuku($buku)
+	{
+		$str = "{$buku->getBuku()} | Pengarang {$buku->pengarang} | Penerbit {$buku->penerbit}";
+		return $str;
+	}
+}
+
 //set value properti objek dari constructor
 $buku2 = new Buku("CSS",20000,"Senong","Media");
 $buku3 = new Buku("PHP",10000,"Doni","Media");
@@ -43,5 +54,11 @@ echo $buku2->getBuku();
 echo "<br>";
 //simbol titik untuk menggabungkan 
 echo "Ini adalah " . $buku3->getBuku();
+echo "<br>";
+
+//membuat objek baru
+$infoBuku = new Coba2();
+//memanggil method di class baru
+echo $infoBuku->cetakInfoBuku($buku2);
 
  ?>
