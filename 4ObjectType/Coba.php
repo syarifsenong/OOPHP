@@ -36,7 +36,8 @@ public function getBuku(){
 //membuat class baru
 class Coba2
 {
-	public function cetakInfoBuku($buku)
+	//public function cetakInfoBuku($buku)//masih bisa dimasukkan sembarang parameter objek
+	public function cetakInfoBuku(Buku $buku)//jadikan objek buku sebagai type agar hanya bisa dimasukkan objek tsb saja
 	{
 		$str = "{$buku->getBuku()} | Pengarang {$buku->pengarang} | Penerbit {$buku->penerbit}";
 		return $str;
@@ -59,6 +60,7 @@ echo "<br>";
 //membuat objek baru
 $infoBuku = new Coba2();
 //memanggil method di class baru
+// echo $infoBuku->cetakInfoBuku($buku2); //parameter di method ini masih bisa dimasukkan sembarang
 echo $infoBuku->cetakInfoBuku($buku2);
 
  ?>
