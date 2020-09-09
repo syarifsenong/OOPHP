@@ -2,10 +2,12 @@
 //nama class
 class Buku
 {
+//properti
  public $nama = "PHP", 
 		$harga = 10000, 
 		$pengarang = "Pak Dika", 
 		$penerbit = "Unpas";
+
 }
 //object instance dari class
 // $buku1 = new Buku();
