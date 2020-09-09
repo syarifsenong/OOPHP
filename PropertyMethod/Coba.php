@@ -8,6 +8,11 @@ class Buku
 		$pengarang = "Pak Dika", 
 		$penerbit = "Unpas";
 
+//method : fungsi yg ada di dalam class
+public function halo(){
+	return "hello world";
+}
+
 }
 //object instance dari class
 // $buku1 = new Buku();
@@ -22,5 +27,10 @@ $buku2->pengarang = "Senong";
 $buku2->penerbit = "Media";
 var_dump($buku2);
 
+
+echo "<br>";
 echo "Buku : $buku2->nama, $buku2->pengarang";
+echo "<br>";
+//manggil method
+echo $buku2->halo();
  ?>
